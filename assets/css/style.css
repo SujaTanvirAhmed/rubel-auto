@@ -1,0 +1,119 @@
+:root {
+    --color-yellow: #F1AF18;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/**
+* HEADER
+*/
+.header {
+    background-color: black;
+}
+
+.header-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.main-nav a {
+    color: white;
+}
+
+.main-nav a:hover {
+    color: var(--color-yellow);
+}
+
+.main-nav a.active {
+    color: var(--color-yellow);
+}
+
+
+/**
+* HERO
+*/
+.hero {
+    background: black;
+}
+
+.hero-cont {
+    position: relative;
+}
+
+.hero-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.hero-img-cont {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-img-cont:first-child,
+.hero-img-cont:last-child {
+    height: 500px;
+    width: 28%;
+}
+
+.hero-img-cont:first-child {
+    background: url("../img/hero-bg-demoland.jpg");
+}
+
+.hero-img-cont:nth-child(2) {
+    height: 500px;
+    width: 22%;
+    background: url("../img/hero-bg-layer2.png");
+}
+
+.hero-img-cont:nth-child(3) {
+    height: 400px;
+    width: 22%;
+    background: url("../img/hero-bg-layer3.png");
+}
+
+.hero-img-cont:last-child {
+    background: url("../img/hero-bg-layer4.png");
+}
+
+.hero-img-cont img {
+    height: 100%;
+    width: auto;
+}
+
+.hero-main {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    top: 300px;
+    left: 330px;
+}
+
+.hero-main img {
+    width: 100%;
+    height: auto;
+}
